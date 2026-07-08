@@ -1,0 +1,35 @@
+Futures Prop Firm Comparison Report
+By: James M. Doyle  |  Data collected: July 7-8, 2026
+Companion files: Project-1-Comparison-Spreadsheet.xlsx, Trader-Decision-Matrix.csv, Sources.csv
+
+1. PURPOSE
+This report helps US futures traders compare six major prop firms on a consistent basis. I organized pricing, evaluation rules, risk limits, payout mechanics, and trading restrictions so a new trader can see real trade-offs without reading six different websites. All numbers prioritize official firm sources; PropFirmMatch was used as a cross-check.
+2. WHAT I COMPARED
+Six US-eligible futures prop firms (Topstep, Apex Trader Funding, Take Profit Trader, MyFundedFutures, Tradeify, Bulenox) across 30+ decision criteria. Primary reference account: $50K where applicable. Blue Guardian was screened but excluded from the US comparison (UAE entity; US access suspended in 2026).
+3. KEY FINDINGS
+* Pricing models split three ways: monthly subscription (Topstep, Take Profit Trader, MFFU Core), one-time evaluation fees (Apex 4.0, Tradeify), and one-time activation with no monthly fee (Bulenox Master). Promos heavily affect real entry cost on every firm.
+* There is no single cheapest firm for everyone. Apex and Bulenox can reach very low entry with 80-90% codes; MFFU Core starts at $77/mo; Topstep Combine promos can run near $49/mo on 50K.
+* Risk rules are the main differentiator after price: EOD vs intraday trailing drawdown, daily loss limits, eval vs funded consistency rules, and flat-by times vary materially firm to firm.
+* Payout mechanics separate look-alike firms: Take Profit Trader offers daily payouts from day one; MFFU Rapid is daily; Tradeify Select Daily is daily; Bulenox pays weekly (Wednesdays) with a $1,000 minimum and early payout caps.
+* Automation and news rules split traders: Take Profit Trader is manual-only with restricted news windows; Topstep, Apex, Tradeify, and Bulenox allow EAs/API with conditions; news trading is unrestricted on Tradeify and Bulenox but restricted on Take Profit Trader and most MFFU plans.
+* Comparison-site coverage is uneven: Bulenox is not a verified listing on PropFirmMatch, and MFFU Core ($77/mo) is absent from their catalog (detailed in Project 3 audit).
+4. FIRM-BY-FIRM SNAPSHOT
+Topstep - Established Chicago-based firm. Monthly Combine model with Express Funded path. Standout: No Activation Fee Combine path and ProjectX API ($29/mo). Watch for: daily loss limit, early 3:10 PM CT flat time, and $149 funded activation. Best for: traders who want a long track record and optional API automation.
+Apex Trader Funding - One-time eval fees under Apex 4.0 (no monthly reset). Standout: 100% of first $25K profit, up to 20 accounts, heavy promos (80-90% off). Watch for: 30-day eval window, 50% funded consistency, metals suspended, and frequent program changes. Best for: promo-focused traders scaling multiple accounts.
+Take Profit Trader - Three-tier path (Test -> PRO -> PRO+). Standout: daily payouts from day one, no daily loss limit on funded (removed Jan 2025), simple reputation. Watch for: $130 PRO activation, manual trading only (no bots), and strict news blackout windows around FOMC/NFP/CPI. Best for: discretionary traders who prioritize fast payouts.
+MyFundedFutures - Multiple plan tiers (Core, Rapid, Pro, Flex, Builder). Standout: $0 activation, Core entry at $77/mo, Rapid daily payouts, dxFeed included. Watch for: plan complexity, news restrictions on most tiers, and per-payout fees ($15). Best for: budget-conscious traders who want plan flexibility.
+Tradeify - Growth, Select, and Lightning programs with one-time eval pricing. Standout: 40% promos, 90/10 split, Select Flex/Daily funded has no consistency rule, news allowed. Watch for: September 2025 rule changes (DLL/consistency vary by SKU). Best for: traders who want promo pricing and program choice.
+Bulenox - One-time Master activation (no monthly). Standout: 100% of first $10K profit, EAs allowed, deep promo codes (up to 89% off). Watch for: $1,000 minimum payout, weekly-only cadence, first-three payout caps, and mixed denial reports. Best for: one-time-fee seekers comfortable with slower payouts. Not listed on PropFirmMatch.
+5. DATA-ACCURACY NOTES
+Official firm websites were treated as the source of truth. Where PropFirmMatch disagreed, I recorded the official value and flagged the gap. Examples found during cross-check (expanded in Project 3): Apex FAQ still lists removed 4.0 rules (5:1 risk-reward, 30% consistency); MFFU Core plan missing from PFM; Take Profit Trader promo wording on activation fees is misleading; Bulenox has no verified PFM listing. Several activation and reset fees remain VERIFY at checkout due to promo-dependent pricing tables.
+6. SOURCES
+* Topstep: https://www.topstep.com/ (checked 2026-07-07)
+* Apex Trader Funding: https://apextraderfunding.com/ (checked 2026-07-07)
+* Take Profit Trader: https://takeprofittrader.com/ + Zendesk PRO rules (checked 2026-07-07)
+* MyFundedFutures: https://myfundedfutures.com/ + Builder help center (checked 2026-07-07)
+* Tradeify: https://tradeify.co/funded-trader-agreement (checked 2026-07-07)
+* Bulenox: https://bulenox.com/help/master-account/ (checked 2026-07-07)
+* Cross-check: https://propfirmmatch.com/futures (checked 2026-07-08 in Project 3)
+
+Full source log: Sources.csv | Detailed field-by-field matrix: Trader-Decision-Matrix.csv
+

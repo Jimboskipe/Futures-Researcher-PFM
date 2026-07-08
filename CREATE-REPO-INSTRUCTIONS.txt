@@ -1,0 +1,11 @@
+﻿CREATE REPO: Futures-Researcher-PFM (Public, README OFF)
+Upload ALL contents of:
+  D:\job-research\CLEAN-Futures-Researcher-PFM
+into the repo ROOT (index.html + styles.css + README.txt + files/)
+Pages: main / (root)
+URL: https://jimboskipe.github.io/Futures-Researcher-PFM/
+
+Then submit PFM Futures:
+Attach: D:\job-research\APPLICATION-PACKAGE-FUTURES\01-Resume-James-M-Doyle-Futures-Researcher.pdf
+Paste:  D:\job-research\APPLICATION-PACKAGE-FUTURES\00-COVER-LETTER-PASTE-TEXT.txt
+Apply:  https://apply.workable.com/pfm-global-fzco/j/AA8D8CAF53

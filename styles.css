@@ -1,0 +1,509 @@
+:root {
+    --bg: #0f1419;
+    --panel: #171e26;
+    --ink: #e8eef4;
+    --muted: #9aabbc;
+    --line: #2a3644;
+    --accent: #3dbf9a;
+    --accent-ink: #071407;
+    --warn: #e6c07b;
+    --success: #4a9d7f;
+    --surface: color-mix(in srgb, var(--panel) 88%, transparent);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background:
+        radial-gradient(1200px 600px at 10% -10%, #1a2a33 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #182419 0%, transparent 50%),
+        var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.55;
+}
+
+.page {
+    width: min(900px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0 0 0.75rem;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    line-height: 1.15;
+    color: var(--ink);
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+h3 {
+    margin: 0 0 0.5rem;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+h4 {
+    margin: 0 0 0.5rem;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.lede {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 70ch;
+    line-height: 1.65;
+}
+
+.meta {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.meta a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.65rem 0.95rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--panel);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.92rem;
+    transition: all 0.2s ease;
+}
+
+.btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+}
+
+.btn:hover {
+    filter: brightness(1.08);
+    border-color: var(--accent);
+}
+
+/* ===== SUMMARY CARD ===== */
+.summary-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.summary-intro {
+    color: var(--muted);
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
+}
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.achievement {
+    padding: 1rem;
+    background: rgba(61, 191, 154, 0.05);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+}
+
+.achievement strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.achievement p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.metric-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.pill {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    background: rgba(61, 191, 154, 0.1);
+    border: 1px solid rgba(61, 191, 154, 0.3);
+    border-radius: 20px;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.7rem;
+    background: rgba(230, 192, 123, 0.08);
+    border: 1px solid rgba(230, 192, 123, 0.25);
+    border-radius: 6px;
+    color: var(--warn);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ===== REVIEW ORDER ===== */
+.review-order {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.steps {
+    margin: 1rem 0 0;
+    padding-left: 1.4rem;
+    color: var(--muted);
+}
+
+.steps li {
+    margin-bottom: 0.5rem;
+}
+
+.steps strong {
+    color: var(--ink);
+}
+
+.note {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.note a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PROJECT GRID ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--panel) 95%, transparent);
+}
+
+.project-header {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(61, 191, 154, 0.2);
+    padding-bottom: 1rem;
+}
+
+.project-header h3 {
+    margin: 0 0 0.5rem;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    background: rgba(61, 191, 154, 0.1);
+    border-radius: 4px;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-section {
+    margin-bottom: 1.25rem;
+}
+
+.project-section h4 {
+    margin: 0 0 0.5rem;
+}
+
+.project-section p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-section strong {
+    color: var(--ink);
+}
+
+.callout {
+    background: rgba(61, 191, 154, 0.05);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.9rem;
+    margin: 1.25rem 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.callout strong {
+    color: var(--accent);
+}
+
+.project-downloads {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(61, 191, 154, 0.15);
+}
+
+.download-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+}
+
+.download-link {
+    display: inline-block;
+    margin-right: 0.75rem;
+    margin-bottom: 0.6rem;
+    padding: 0.4rem 0.65rem;
+    background: rgba(230, 192, 123, 0.08);
+    border: 1px solid rgba(230, 192, 123, 0.25);
+    border-radius: 4px;
+    color: var(--warn);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.download-link:hover {
+    background: rgba(230, 192, 123, 0.12);
+    border-color: rgba(230, 192, 123, 0.4);
+}
+
+/* ===== DOWNLOADS SECTION ===== */
+.downloads-section {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.downloads-section p {
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+}
+
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.download-group {
+    padding: 1rem;
+    background: rgba(61, 191, 154, 0.03);
+    border: 1px solid rgba(61, 191, 154, 0.15);
+    border-radius: 8px;
+}
+
+.download-group h3 {
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+    color: var(--ink);
+}
+
+.download-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.download-list li {
+    margin-bottom: 0.75rem;
+}
+
+.download-list a {
+    color: var(--warn);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.download-list a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: #6f8193;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .page {
+        width: min(100%, calc(100% - 1.25rem));
+        padding-top: 1.5rem;
+    }
+
+    .hero {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .downloads-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .page {
+        width: min(100%, calc(100% - 0.75rem));
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .cta-row {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .metric-pills {
+        gap: 0.5rem;
+    }
+
+    .pill {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

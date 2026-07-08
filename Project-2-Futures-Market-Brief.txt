@@ -1,0 +1,41 @@
+FUTURES MARKET BRIEF
+Instrument: Gold (XAU/USD spot; COMEX GC proxy)  |  Event: June 2026 Non-Farm Payrolls (NFP)
+Date: July 2, 2026  |  By: James M. Doyle
+
+HEADLINE
+Gold rallied sharply after the June NFP report badly missed expectations, crushing rate-hike bets and sending the U.S. dollar lower.
+
+WHAT HAPPENED
+In the 12 hours before the 8:30 AM ET release, gold traded in a $4,040-$4,080 range. Within about an hour of the report, price broke higher into the $4,100-$4,150 zone - a move of roughly $75-$100 per ounce (about 1.8%-2.5%).
+
+
+
+WHY IT HAPPENED
+* Payrolls added only +57,000 jobs in June vs. consensus near ~110,000 (BLS, July 2, 2026).
+* April and May payrolls were revised down by a combined 74,000 jobs.
+* Unemployment ticked down to 4.2%, but labor force participation fell to 61.5% (-0.3 pp) - the rate improved partly because fewer people were actively looking for work.
+* Markets reduced odds of near-term Fed rate hikes; Treasury yields and the dollar fell, lifting non-yielding gold.
+
+KEY LEVELS TO WATCH
+* Support: $3,920 (pre-event consolidation low)
+* Resistance: $4,300 area (bear trendline / fair value gap zone on higher timeframes)
+* Next catalyst: July 2026 Employment Situation (NFP) - Friday, August 7, 2026, 8:30 AM ET
+
+TRADER TAKEAWAY
+Weak labor data can support gold even when the unemployment rate looks stable on the surface. Until hiring re-accelerates, gold may stay sensitive to downside NFP surprises and any dovish repricing in rates.
+
+EVENT-VOLATILITY FRAMEWORK (OPTIONAL PLAYBOOK)
+When a Tier-1 release is likely to expand volatility but direction is uncertain, some traders use a bracket (straddle-style) setup instead of guessing direction.
+Example using the pre-NFP range ($4,040-$4,080) and an expected expansion of ~$75-$100/oz:
+* About 5 minutes before 8:30 AM ET, place opposing breakout orders around the range (long above highs, short below lows).
+* Risk 1.25% of account per leg (example sizing rule).
+* Stop loss: 25 points ($25/oz). Take profit: 50 points ($50/oz) on each leg.
+* The losing leg should stop out while the winning leg captures the news spike - target net reward around 1:2 on the surviving position if the move is large enough.
+Terminology note: gold is quoted in dollars per ounce (points), not forex pips. On COMEX GC (100 oz), a $1 move = $100 per contract and the minimum tick is $0.10 ($10/contract). On micro gold (MGC, 10 oz), divide dollar P/L by 10.
+
+SOURCES
+* U.S. Bureau of Labor Statistics. (2026, July 2). The Employment Situation - June 2026. https://www.bls.gov/news.release/archives/empsit_07022026.htm
+* Ash, A. (2026, July 2). Gold and silver jump as weak jobs data crushes Fed rate-rise bets. BullionVault. https://www.bullionvault.com/gold-news/gold-price-news/gold-silver-non-farm-fed-070220261
+* GoldSilver. (2026, July 2). Gold price and the unemployment rate: July 2026 market update. https://goldsilver.com/industry-news/goldsilver-news/gold-price-unemployment-rate-july-2026/
+* TradingView. (2026). Gold / U.S. Dollar (XAUUSD) chart. https://www.tradingview.com/chart/uhkqh83z/?symbol=ALCHEMY%3AXAUUSD.R
+

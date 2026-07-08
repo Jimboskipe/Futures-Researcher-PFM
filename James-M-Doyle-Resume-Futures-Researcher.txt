@@ -1,0 +1,44 @@
+JAMES MITCHELL DOYLE
+Weston, WI | james.doyle6@snhu.edu | 608-417-0678 | U.S. Army Veteran, Airborne Parachutist (62B-1P)
+Remote | Available for CET overlap hours
+PROFESSIONAL SUMMARY
+Futures-focused research and data analyst with 5+ years of self-directed study in crypto markets, DeFi, U.S. equities, and prop-firm operations. Active prop-firm trader with 10,000+ journaled trades and a disciplined source-verification workflow. Completed a three-project futures research portfolio aligned to PropFirmMatch: six-firm comparison (30+ criteria), BLS-verified NFP/gold market brief, and 50-point PropFirmMatch data accuracy audit identifying 13 sourced discrepancies. U.S. Army veteran (MOS 62B-1P) and former construction business owner with 8 years of P&L, payroll, and exception-handling experience. Completing B.S. Computer Science and Data Management at SNHU. Seeking Futures Researcher and remote fintech research roles.
+CORE COMPETENCIES
+Futures prop firm research | Market/data verification | Source documentation and audit loops | Crypto/DeFi and collateral lending analysis | Python analytics | Trading journal systems | Spreadsheet modeling | Operations under cash-flow pressure | Structured writing for non-expert readers
+FUTURES RESEARCH PORTFOLIO
+Self-Directed | July 2026 | PropFirmMatch-aligned deliverables
+* Project 1 - Firm Comparison: Researched six US futures prop firms (Topstep, Apex, Take Profit Trader, MyFundedFutures, Tradeify, Bulenox) across 30+ decision criteria; delivered comparison spreadsheet, decision matrix, summary report, and source log with date-checked URLs.
+* Project 2 - Market Brief: Authored a one-page brief on June 2026 NFP miss and gold (XAU/USD / COMEX GC); verified against official BLS release (+57K jobs, 4.2% unemployment, -74K revisions); included chart screenshots and trader-ready key levels.
+* Project 3 - Data Accuracy Audit: Compared PropFirmMatch listings to official firm help centers (50 checks); identified 13 discrepancies including outdated Apex 4.0 FAQ rules, missing MFFU Core SKU, misleading TPT activation promo, and Bulenox coverage gap; delivered spreadsheet and findings memo with recommendations.
+TECHNICAL PROJECTS
+Trading Performance and Journal Application | Python | In Development
+* Built application to gauge trading performance, journal sessions, and test strategies; supports daily review workflow aligned with funded-account discipline.
+Ops Control Tower | SQL / Python | Portfolio
+* Fintech operations analytics demo: exception-queue modeling, SLA/MTTR metrics, staging-to-mart SQL transforms, and ops runbook documentation.
+PROFESSIONAL EXPERIENCE
+Founder | Red Eye Research | Remote / Weston, WI | 2025 - Present
+* Independent market research on crypto collateral lending, institutional adoption, DeFi use cases, and prop-firm structures for B2B-oriented diligence.
+* Maintain primary-source verification standards over social-media hype; document due diligence with structured research notes and audit-style recordkeeping.
+* Manage three $100K funded prop accounts (Fxify, BlueGuardian) with systematic journaling and monthly scaling plan toward $1M working capital across accounts.
+Commercial Carpenter | Midwest Council of Carpenters | Madison, WI Area | 2022 - Present
+* Union commercial carpentry on 15-story student housing (~100,000+ SF) and 120-unit apartment projects; lead crews of 3-9 on framing and finish tasks.
+* Field-to-office bridge: partnered with foreman on mid-project recovery using Bluebeam to track window packages from delivery through install.
+Owner / Operator | Doyle's Contracting LLC | Madison, WI | 2014 - 2022
+* Managed full P&L on framing and deck work; peak ~$250K annual revenue, 2 concurrent jobs, 5 employees, and ~$20K/month payroll.
+* Co-developed inspection checklist with municipal inspector after failed framing inspection; achieved consistent pass rate on subsequent homes.
+* Restructured decisively after combined ~$90K+ losses; preserved family stability and transitioned into union carpentry for long-term career growth.
+Carpenter | Ford Metro Inc. | Rochester, MN
+* Commercial and residential carpentry including timber framing and production carpentry on varied project types.
+Construction Equipment Repairer, Parachutist (62B-1P) | U.S. Army | 2004 - 2007
+* Specialist (E-4), MOS 62B-1P; qualified parachutist in airborne response force assignment.
+* Maintained construction equipment readiness through scheduled maintenance, fault diagnosis, and repair under high-discipline operational standards.
+* Top Secret clearance (expired).
+EDUCATION
+Bachelor of Computer Science and Data Management (In Progress) | Southern New Hampshire University (SNHU) | Expected 2029
+Academic performance: 96.25% on first completed course (962.5/1000)
+Parallel self-directed study: 5+ years fintech, crypto, DeFi, U.S. equity research, and prop-firm operations
+CERTIFICATIONS
+OSHA 30
+COMMUNITY
+Ongoing structured community service and peer mentorship; developed accountability, communication, and consistency practices applied to research delivery and daily operations.
+
