@@ -1,0 +1,31 @@
+PROP FIRM DATA ACCURACY AUDIT - FINDINGS MEMO
+By: James M. Doyle  |  Date: 2026-07-08
+1. WHAT I AUDITED
+Compared PropFirmMatch listings against official firm websites and help centers for six futures prop firms (Apex, Topstep, MyFundedFutures, Take Profit Trader, Tradeify, Bulenox). Eight core fields per firm plus legacy/coverage checks.
+2. RESEARCH METHODOLOGY (3 LOOPS)
+* Loop 1 - PFM capture via WebFetch (curl blocked by Cloudflare).
+* Loop 2 - Official verification against help centers and pricing pages.
+* Loop 3 - Discrepancy hunt for stale Apex 4.0 content, missing SKUs, unlisted firms, misleading promos.
+3. SUMMARY OF RESULTS
+* Total checks: 50
+* Matched (Yes): 28
+* Differed (No): 13
+* Unclear: 6
+* N/A: 3
+4. KEY DISCREPANCIES FOUND (ACTIONABLE)
+* APEX - FAQ still lists REMOVED legacy rules (5:1 risk-reward, 30% consistency). Apex 4.0 uses 50% consistency and removed 5:1 RR.
+* APEX - AI summary understates 50K EOD drawdown ($625-$1500 vs official $2000).
+* APEX - AI summary lists account sizes up to $300K; new 4.0 purchases max $150K.
+* APEX - Rules say EAs prohibited; Apex markets ProjectX API automation.
+* MY FUNDED FUTURES - Core $77/mo plan NOT listed on PFM (catalog gap).
+* TAKE PROFIT TRADER - Promo no activation fee is misleading vs $130 PRO activation unless credit applied post-pass.
+* TOPSTEP - Page mixes Live DLL ($2000) with Combine rules ($1000 DLL on 50K).
+* BULENOX - Firm UNLISTED on PropFirmMatch (coverage gap).
+5. RECOMMENDATIONS
+* Add last-verified dates and sweep Apex 4.0 legacy FAQ.
+* Add MFFU Core SKU or publish deprecation note.
+* Clarify TPT post-pass credit workflow in promo headlines.
+* List or clearly mark unlisted firms like Bulenox.
+6. METHOD AND SOURCES
+Full row-level audit: Project-3-Audit-Spreadsheet-COMPLETE.xlsx. PFM and official URLs in spreadsheet.
+
