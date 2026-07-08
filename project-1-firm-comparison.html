@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 1: Futures Prop Firm Comparison</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #171e26;
+      --ink: #e8eef4;
+      --muted: #9aabbc;
+      --line: #2a3644;
+      --accent: #3dbf9a;
+      --warn: #e6c07b;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a2a33 0%, transparent 55%), 
+                  radial-gradient(900px 500px at 100% 0%, #182419 0%, transparent 50%), 
+                  var(--bg);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(1000px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .nav-back {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-back:hover { text-decoration: underline; }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      line-height: 1.15;
+    }
+
+    .meta-line {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 2rem 0 1rem;
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 1.5rem 0 0.75rem;
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      line-height: 1.7;
+    }
+
+    .section {
+      background: color-mix(in srgb, var(--panel) 88%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th {
+      background: color-mix(in srgb, var(--panel) 95%, var(--accent));
+      color: var(--accent);
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.9rem;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.9rem;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    tbody tr:hover {
+      background: color-mix(in srgb, var(--panel) 95%, transparent);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--warn);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .callout {
+      background: rgba(61, 191, 154, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 6px;
+    }
+
+    .firm-name {
+      font-weight: 600;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: #6f8193;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .page { width: min(100%, calc(100% - 1rem)); }
+      table { font-size: 0.8rem; }
+      th, td { padding: 0.75rem; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="index.html" class="nav-back">← Back to portfolio</a>
+      <h1>Project 1: Futures Prop Firm Comparison</h1>
+      <p class="meta-line">By: James M. Doyle  |  Data collected: July 7-8, 2026</p>
+    </header>
+
+    <section class="section">
+      <h2>Purpose</h2>
+      <p>This report helps US futures traders compare six major prop firms on a consistent basis. I organized pricing, evaluation rules, risk limits, payout mechanics, and trading restrictions so a new trader can see real trade-offs without reading six different websites. All numbers prioritize official firm sources; PropFirmMatch was used as a cross-check.</p>
+    </section>
+
+    <section class="section">
+      <h2>What I Compared</h2>
+      <p>Six US-eligible futures prop firms (Topstep, Apex Trader Funding, Take Profit Trader, MyFundedFutures, Tradeify, Bulenox) across 30+ decision criteria. Primary reference account: $50K where applicable. Blue Guardian was screened but excluded from the US comparison (UAE entity; US access suspended in 2026).</p>
+    </section>
+
+    <section class="section">
+      <h2>Key Findings</h2>
+      <ul>
+        <li><strong>Pricing models split three ways:</strong> monthly subscription (Topstep, Take Profit Trader, MFFU Core), one-time evaluation fees (Apex 4.0, Tradeify), and one-time activation with no monthly fee (Bulenox Master). Promos heavily affect real entry cost on every firm.</li>
+        <li><strong>No single cheapest firm:</strong> Apex and Bulenox can reach very low entry with 80-90% codes; MFFU Core starts at $77/mo; Topstep Combine promos can run near $49/mo on 50K.</li>
+        <li><strong>Risk rules are the main differentiator:</strong> EOD vs intraday trailing drawdown, daily loss limits, eval vs funded consistency rules, and flat-by times vary materially firm to firm.</li>
+        <li><strong>Payout mechanics separate look-alike firms:</strong> Take Profit Trader offers daily payouts from day one; MFFU Rapid is daily; Tradeify Select Daily is daily; Bulenox pays weekly (Wednesdays) with a $1,000 minimum and early payout caps.</li>
+        <li><strong>Automation and news rules split traders:</strong> Take Profit Trader is manual-only with restricted news windows; Topstep, Apex, Tradeify, and Bulenox allow EAs/API with conditions; news trading is unrestricted on Tradeify and Bulenox but restricted on Take Profit Trader and most MFFU plans.</li>
+        <li><strong>Comparison-site coverage is uneven:</strong> Bulenox is not a verified listing on PropFirmMatch, and MFFU Core ($77/mo) is absent from their catalog (detailed in Project 3 audit).</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Firm Comparison Matrix</h2>
+      <p>Six major US futures prop firms compared across key decision criteria:</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Firm</th>
+            <th>Website</th>
+            <th>HQ / Legal</th>
+            <th>US Law?</th>
+            <th>Trustpilot</th>
+            <th>Payouts?</th>
+            <th>Key Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="firm-name">Topstep</span></td>
+            <td><a href="https://www.topstep.com" target="_blank">topstep.com</a></td>
+            <td>Chicago, IL (Topstep LLC)</td>
+            <td>Yes</td>
+            <td>3.4/5 (~14K)</td>
+            <td>Yes - long track record</td>
+            <td>No activation fee path</td>
+          </tr>
+          <tr>
+            <td><span class="firm-name">Apex Trader Funding</span></td>
+            <td><a href="https://apextraderfunding.com" target="_blank">apextraderfunding.com</a></td>
+            <td>Austin, TX (US company)</td>
+            <td>Yes</td>
+            <td>4.4/5 (~18K)</td>
+            <td>Yes - high volume</td>
+            <td>100% first $25K; heavy promos</td>
+          </tr>
+          <tr>
+            <td><span class="firm-name">Take Profit Trader</span></td>
+            <td><a href="https://takeprofittrader.com" target="_blank">takeprofittrader.com</a></td>
+            <td>US-based</td>
+            <td>Yes</td>
+            <td>4.4/5 (~9K)</td>
+            <td>Yes - daily payouts 24-48h</td>
+            <td>No daily loss limit on funded</td>
+          </tr>
+          <tr>
+            <td><span class="firm-name">MyFundedFutures</span></td>
+            <td><a href="https://myfundedfutures.com" target="_blank">myfundedfutures.com</a></td>
+            <td>US-based (2023)</td>
+            <td>Yes</td>
+            <td>4.9/5 (~17K)</td>
+            <td>Yes - fast payouts</td>
+            <td>Core $77/mo entry</td>
+          </tr>
+          <tr>
+            <td><span class="firm-name">Tradeify</span></td>
+            <td><a href="https://tradeify.co" target="_blank">tradeify.co</a></td>
+            <td>US-based</td>
+            <td>Yes</td>
+            <td>4.6/5 (~2.5K)</td>
+            <td>Yes - hours reported</td>
+            <td>40% off; fast payouts</td>
+          </tr>
+          <tr>
+            <td><span class="firm-name">Bulenox</span></td>
+            <td><a href="https://bulenox.com" target="_blank">bulenox.com</a></td>
+            <td>Delaware, USA (LLC)</td>
+            <td>Yes</td>
+            <td>4.8/5 (verify)</td>
+            <td>Yes - weekly Wed payouts</td>
+            <td>89% off codes; 100% first $10K</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Data Accuracy Note:</strong> Official firm websites were treated as the source of truth. Where PropFirmMatch disagreed, I recorded the official value and flagged the gap. Several activation and reset fees remain subject to promo-dependent pricing tables.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Firm-by-Firm Snapshot</h2>
+
+      <h3>Topstep</h3>
+      <p>Established Chicago-based firm. Monthly Combine model with Express Funded path. <strong>Standout:</strong> No Activation Fee Combine path and ProjectX API ($29/mo). <strong>Watch for:</strong> daily loss limit, early 3:10 PM CT flat time, and $149 funded activation. <strong>Best for:</strong> traders who want a long track record and optional API automation.</p>
+
+      <h3>Apex Trader Funding</h3>
+      <p>One-time eval fees under Apex 4.0 (no monthly reset). <strong>Standout:</strong> 100% of first $25K profit, up to 20 accounts, heavy promos (80-90% off). <strong>Watch for:</strong> 30-day eval window, 50% funded consistency, metals suspended, and frequent program changes. <strong>Best for:</strong> promo-focused traders scaling multiple accounts.</p>
+
+      <h3>Take Profit Trader</h3>
+      <p>Three-tier path (Test → PRO → PRO+). <strong>Standout:</strong> daily payouts from day one, no daily loss limit on funded (removed Jan 2025), simple reputation. <strong>Watch for:</strong> $130 PRO activation, manual trading only (no bots), and strict news blackout windows around FOMC/NFP/CPI. <strong>Best for:</strong> discretionary traders who prioritize fast payouts.</p>
+
+      <h3>MyFundedFutures</h3>
+      <p>Multiple plan tiers (Core, Rapid, Pro, Flex, Builder). <strong>Standout:</strong> $0 activation, Core entry at $77/mo, Rapid daily payouts, dxFeed included. <strong>Watch for:</strong> plan complexity, news restrictions on most tiers, and per-payout fees ($15). <strong>Best for:</strong> budget-conscious traders who want plan flexibility.</p>
+
+      <h3>Tradeify</h3>
+      <p>Growth, Select, and Lightning programs with one-time eval pricing. <strong>Standout:</strong> 40% promos, 90/10 split, Select Flex/Daily funded has no consistency rule, news allowed. <strong>Watch for:</strong> September 2025 rule changes (DLL/consistency vary by SKU). <strong>Best for:</strong> traders who want promo pricing and program choice.</p>
+
+      <h3>Bulenox</h3>
+      <p>One-time Master activation (no monthly). <strong>Standout:</strong> 100% of first $10K profit, EAs allowed, deep promo codes (up to 89% off). <strong>Watch for:</strong> $1,000 minimum payout, weekly-only cadence, first-three payout caps, and mixed denial reports. <strong>Best for:</strong> one-time-fee seekers comfortable with slower payouts. Not listed on PropFirmMatch.</p>
+    </section>
+
+    <section class="section">
+      <h2>Sources & References</h2>
+      <ul>
+        <li><a href="https://www.topstep.com/" target="_blank">Topstep</a> (checked 2026-07-07)</li>
+        <li><a href="https://apextraderfunding.com/" target="_blank">Apex Trader Funding</a> (checked 2026-07-07)</li>
+        <li><a href="https://takeprofittrader.com/" target="_blank">Take Profit Trader</a> (checked 2026-07-07)</li>
+        <li><a href="https://myfundedfutures.com/" target="_blank">MyFundedFutures</a> (checked 2026-07-07)</li>
+        <li><a href="https://tradeify.co/" target="_blank">Tradeify</a> (checked 2026-07-07)</li>
+        <li><a href="https://bulenox.com/" target="_blank">Bulenox</a> (checked 2026-07-07)</li>
+        <li><a href="https://propfirmmatch.com/futures" target="_blank">PropFirmMatch Futures Comparison</a> (cross-check, checked 2026-07-08)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Project 1: Futures Prop Firm Comparison | July 2026</p>
+      <p><a href="index.html">← Back to portfolio</a></p>
+    </footer>
+  </div>
+</body>
+</html>
